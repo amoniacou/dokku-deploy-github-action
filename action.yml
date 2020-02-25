@@ -25,7 +25,7 @@ inputs:
   git-push-flags:
     description: "Additional flags to be passed to the git push command. Could be used to force push"
     required: false
-    default: ""
+    default: "--no-verify -f"
 runs:
   using: "docker"
   image: "Dockerfile"
